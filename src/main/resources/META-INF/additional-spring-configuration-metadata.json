@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "@ComponentScan(value",
+      "type": "java.lang.String",
+      "description": "Description for @ComponentScan(value."
+  }
+] }

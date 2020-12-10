@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <link href="/css/register.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="title"><h1>用户注册</h1></div>
+<div id="input">
+    <form action="/signin" method="post">
+        <input class="inputtext" name="username" type="text" placeholder="请输入用户名"/>
+        <input class="inputtext" name="password" type="password" placeholder="请输入密码"/>
+        <input class="inputbtn" type="submit" value="注册"/>
+    </form>
+</div>
+<div id="tologin">已有账号？<a href="http://localhost:8091">去登陆</a></div>
+<footer class="footer">
+    <a>©2020 DSD Inc. All Rights Reserved.</a>
+</footer>
+</body>
+</html>

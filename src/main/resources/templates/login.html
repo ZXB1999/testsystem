@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DSDcompany™</title>
+    <link rel="icon" href="/img/jmrlogo.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/login.js}"></script>
+</head>
+<body>
+<input type="hidden" id="state" >
+
+<header class="header">
+    <a class="header_logo" href="#">DSDcompany™</a>
+    <a class="header_link" th:href="@{/register}">新用户</a>
+</header>
+<div class="login">
+    <form id="formstyle">
+        <input type="text" id="username" placeholder="用户名" class="inputstyle" value="" />
+        <input type="password" id="password" placeholder="密码" class="inputstyle" value="" />
+        <input type="button" class="inputstyle logbtn" value="登录" onclick="UserName()" id="sendTo" />
+    </form>
+</div>
+<footer class="footer">
+    <a>©2020 DSD Inc. All Rights Reserved.</a>
+</footer>
+<script th:src="@{/js/login.js}"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+	background-image: url(../img/AE86.jpg);
+	/* 置固定的背景图像 */
+	background-attachment: fixed;
+	/* 置固定的背景图像 */
+	background-repeat: no-repeat;
+	/*不复制*/
+	background-position: center;
+	/* 居中 */
+	background-size: 100% 100%;
+	/* 铺满 */
+}
+#input {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 400px;
+	top: 100px;
+	left: 200px;
+	background-color: #aaffff;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #000;
+}
+
+.inputtext {
+	float: left;
+	width: 280px;
+	height: 35px;
+	margin-top: 30px;
+	margin-left: 5px;
+}
+
+.inputbtn {
+	float: left;
+	width: 280px;
+	height: 35px;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.inputbtn:hover {
+	box-shadow: 0px 0px 0px 3px #ffffff,
+		0px 0px 0px 6px #55ffff,
+		0px 0px 0px 9px #55aaff;
+}
+
+#title {
+	position: absolute;
+	float: right;
+	right: 50px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	clear: both;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+	background-color: #eff4fa;
+	border-top: 1px solid #d6dfea;
+}
+
+#tologin {
+	position: absolute;
+	left: 300px;
+	top: 450px;
+}

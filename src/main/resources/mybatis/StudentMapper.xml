@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jmr.dao.StudentMapper">
+    <!--根据id查询客户信息 -->
+    <select id="findStudentSex" parameterType="com.jmr.pojo.Student"
+            resultType="Integer">
+		select count(s_sex) from student where s_sex = #{a}
+	</select>
+    <select id="findLevalSchool" parameterType="com.jmr.pojo.Student"
+            resultType="Integer">
+		select count(s_c_level) from student where s_c_level = #{b}
+	</select>
+	<select id="findProfession" parameterType="com.jmr.pojo.Student"
+			resultType="Integer">
+		select count(s_e_history) from student where s_e_history = #{c}
+	</select>
+	<select id="findLanguage" parameterType="com.jmr.pojo.Student"
+			resultType="Integer">
+		select count(s_f_language) from student where s_f_language = #{d}
+	</select>
+	<select id="findMoney" parameterType="com.jmr.pojo.Student"
+			resultType="Integer">
+		select count(s_s_range) from student where s_s_range = #{e}
+	</select>
+	<select id="findWhere" parameterType="com.jmr.pojo.Student"
+			resultType="Integer">
+		select count(s_e_city) from student where s_e_city = #{f}
+	</select>
+</mapper>

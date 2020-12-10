@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/GTR32.jpg);
+    /* 置固定的背景图像 */
+    background-attachment: fixed;
+    /* 置固定的背景图像 */
+    background-repeat: no-repeat;
+    /*不复制*/
+    background-position: center;
+    /* 居中 */
+    background-size: 100% 100%;
+    /* 铺满 */
+}
+
+.header {
+    height: 62px;
+    overflow: hidden;
+    zoom: 1;
+    border-bottom: 1px solid #d6dfea;
+    background: #eff4fa;
+}
+
+.header_logo {
+    float: left;
+    width: 182px;
+    height: 35px;
+    margin-top: 14px;
+    margin-left: 17px;
+    text-indent: -9999em;
+    background-size: 182px 35px;
+    background-image: url("/img/dsdlogo2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.header_link {
+    float: right;
+    overflow: hidden;
+    margin-top: 16px;
+    padding-right: 17px;
+    line-height: 30px;
+    text-align: right;
+    color: #aaaa7f;
+}
+
+.header_link:hover {
+    color: #55ffff;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    clear: both;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    background-color: #eff4fa;
+    border-top: 1px solid #d6dfea;
+}
+
+.login {
+    position: relative;
+    float: right;
+    border: 1px solid #a0b1c4;
+    width: 334px;
+    height: 387px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    top: 150px;
+    right: 100px;
+}
+
+.logbtn {
+    margin-left: 30px;
+}
+
+.logbtn:hover {
+    background-color: #EFF4FA;
+}
+
+.inputstyle {
+    top: 0px;
+    padding: 10px 25px 10px 25px; /*up right down left*/
+    left: 0px;
+    border-radius: 3px;
+    width: 232px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#formstyle {
+    position: absolute;
+    top: 50px;
+    width: 286px;
+    left: 25px;
+}

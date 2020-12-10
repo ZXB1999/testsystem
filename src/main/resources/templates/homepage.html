@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <link rel="icon" href="/img/jmrlogo.ico" type="image/x-icon" />
+    <link href="/css/left.css" type="text/css" rel="stylesheet" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/left.js"></script>
+    <script src="/js/login.js"></script>
+</head>
+<body>
+<!--侧栏界面设计-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" onclick="runtoline(this)" type="1" id="run1">UserList</a>
+    <a href="#" onclick="runtoline(this)" type="2" id="run2">Jobsta</a>
+    <a href="#" onclick="runtoline(this)" type="3" id="run3">Swagger</a>
+    <a href="#" onclick="runtoline(this)" type="4" id="run4">Stusta</a>
+</div>
+
+<div id="main">
+    <div class="main">
+        <div id="topandleft">
+            <span style="font-size:30px;cursor:pointer;float: left;top: 0;" onclick="openNav()">&#9776; open</span>
+            <ul class="selectdown">
+                <li class="drop-down" >
+                    <h2 class="idn">
+                        欢迎<a id="un">xxx</a>
+                    </h2>
+                    <ul class="drop-down-content">
+                        <li><a href="#">个人中心</a></li>
+                        <li><a href="#">我是2</a></li>
+                        <li><a onclick="deletecookie()" href="http://localhost:8091">退出登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div id="right">
+            <iframe marginwidth=0 marginheight=0 frameborder="no"  class="changed" id="SrC" src="http://localhost:8091/findStudentBySex"></iframe>
+        </div>
+    </div>
+</div>
+<script>
+    //动态显示当前登录的用户名
+    $("#un").text(getCookie("username"));
+
+    //删除cookie
+    var delCookie = function (name) {
+        setCookie(name, ' ', -1);
+    };
+    function deletecookie() {
+        delCookie('username',' ',-1)
+    }
+</script>
+</body>
+</html>
