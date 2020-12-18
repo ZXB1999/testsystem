@@ -24,7 +24,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     private void loginInterceptor(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor)
-                .addPathPatterns("/userlist", "/jiuye", "/job", "/findStudentBySex","/swagger-ui.html")//拦截
+                .addPathPatterns("/userlist", "/jiuye", "/job", "/findStudentBySex","/swagger-ui.html","/upload1")//拦截
                 .excludePathPatterns( //释放
                         "/**/*.css",
                         "/**/*.js",

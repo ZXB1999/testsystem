@@ -1,6 +1,7 @@
 package com.jmr.timertask;
 
 import org.apache.commons.lang3.time.DateUtils;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 @Component
 //开启定时任务注解
+@ConditionalOnProperty(prefix = "dbmunptask", name = "enabled", havingValue = "true")
 @EnableScheduling
 public class TimerTask {
     String path = "d:\\test\\";

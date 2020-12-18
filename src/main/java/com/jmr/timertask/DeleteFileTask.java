@@ -2,6 +2,7 @@ package com.jmr.timertask;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -14,9 +15,11 @@ import java.util.Date;
  * @auther 张旭博
  */
 @Component
+//使用配置开关定时器
+@ConditionalOnProperty(prefix = "deletetask", name = "enabled", havingValue = "true")
 @EnableScheduling
 public class DeleteFileTask {
-    static String FILE_PATH="D:\\test\\file";
+    static String FILE_PATH="src\\main\\webapp";
     static Logger logger = LoggerFactory.getLogger(DeleteFileTask.class);
 
     /**
@@ -37,7 +40,7 @@ public class DeleteFileTask {
      */
     private void deleteFile(File file){
         File[] files = file.listFiles();
-        if(files!=null){
+        if(files.length!=0){
             for (File nf:files) {
                 if (nf.isDirectory()){
                     deleteFile(nf);
