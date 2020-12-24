@@ -17,4 +17,9 @@
     <select id="userexist" parameterType="String" resultType="String">
 		select username from user where username = #{nowUser};
 	</select>
+
+<!--    select username from user where username like '%z%';-->
+    <select id="fuzzysearch" parameterType="String" resultType="com.jmr.pojo.User">
+		select username from user where username like concat('%',#{u},'%');
+	</select>
 </mapper>

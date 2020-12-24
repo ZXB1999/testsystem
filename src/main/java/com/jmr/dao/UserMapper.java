@@ -8,4 +8,5 @@ import java.util.List;
 public interface UserMapper {
     List<UserList> findAllUser();
     String userexist(String nowUser);
+    List fuzzysearch(String u);
 }

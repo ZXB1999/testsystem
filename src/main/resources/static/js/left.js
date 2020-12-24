@@ -33,5 +33,7 @@ function runtoline(data) {
 		document.getElementById("SrC").src="http://localhost:8091/swagger-ui.html";
 	}else if (type==4){
 		document.getElementById("SrC").src="http://localhost:8091/findStudentBySex";
+	}else if (type==5){
+		document.getElementById("SrC").src="http://localhost:8091/uploadpage";
 	}
 }

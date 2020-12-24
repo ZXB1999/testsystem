@@ -40,4 +40,9 @@ public class UserServiceImpl implements UserService {
         return false;
     }
 
+    @Override
+    public List FuzzySearch(String username) {
+        return userMapper.fuzzysearch(username);
+    }
+
 }

@@ -1,3 +1,5 @@
+// 严格检查模式
+'use strict'
 // 发送密码到后台
 $("#sendTo").click(function () {
     var username=$("#username").val();

@@ -11,4 +11,5 @@ import java.util.Map;
 public interface UserService {
     Map<Integer, List<User>> FindAllUser();
     boolean wasuserexist(String nowUsername);
+    List FuzzySearch(String username);
 }

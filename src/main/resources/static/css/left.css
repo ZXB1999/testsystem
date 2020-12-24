@@ -103,6 +103,7 @@ ul a {
     text-align: center;
     line-height: 40px;
     color: black;
+    cursor: pointer;
 }
 
 .drop-down {
